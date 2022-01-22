@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Oxygen:wght@300&family=Roboto:ital,wght@1,900&family=Rubik:wght@700&display=swap" rel="stylesheet">
     <title>Encriptador</title>
 </head>
 <body>
@@ -15,9 +18,8 @@
         <section>
             <div class="conteiner">
                 <p>Insertar texto</p>
-                <input class="texto" type="text" id="textoCopiar" placeholder="Insertar texto"> 
+                <input class="texto"  id="textoCopiar" placeholder="Insertar texto" style="text-transform:lowercase;" onkeyup="javascript:this.value=this.value.toLowerCase();" onkeypress="return validarTexto(event);" pattern=".{3,99}" > 
                 <span><box-icon type='solid' name='copy'> </box-icon></span>
-                <span class="invisible"  id="error">Error texto no válido</span>
                 <button class="btn-encriptar" id="encriptar" >Encriptar</button>
                 <button class="btn-desencriptar" id="desencriptar">desencriptar</button>
                 <button class="btn-limpiar" id="btn-limpiar">Limpiar</button>    
@@ -43,6 +45,6 @@
     </footer>
    <script src="js/encriptador.js"></script>
    <script src="js/desencriptador.js"></script>
-   <script src="js/funcionalidad-botones.js"></script>
+   <script src="js/botonCopiar.js"></script>
 </body>
 </html>

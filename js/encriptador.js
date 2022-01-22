@@ -3,9 +3,8 @@ var resultado = document.querySelector("#resultado");
 botonEncriptar.addEventListener("click",encriptar);
 
 function encriptar(){
-    
     var texto = document.querySelector(".texto").value;
-
+    texto.validarTexto();
         texto = texto.replaceAll("e","enter");
         texto = texto.replaceAll("i","imes");
         texto = texto.replaceAll("a","ai");
@@ -15,3 +14,4 @@ function encriptar(){
     resultado.value = texto
     
 };
+
