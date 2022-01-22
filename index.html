@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <title>Document</title>
+    <title>Encriptador</title>
 </head>
 <body>
     <header>
-        <h1 class="titulo"></h1>
+        <h1 class="titulo">Encriptador de Texto</h1>
     </header>
     <main>
         <section>
@@ -17,13 +17,13 @@
                 <p>Insertar texto</p>
                 <input type="text" id="texto" placeholder="Insertar texto">
                 <span class="invisible"  id="error">Error texto no válido</span>
-                <button class="boton" id="encriptar" >Encriptar</button>
-                <button class="boton" id="desencriptar">desencriptar</button>
-                <button class="boton" id="limpiar">Limpiar</button>    
+                <button class="botonE" id="btn-encriptar" >Encriptar</button>
+                <button class="boton" id="btn-desencriptar">desencriptar</button>
+                <button class="boton" id="btn-limpiar">Limpiar</button>    
             </div>
             <div class="conteiner">
                 <p>Resultado</p>
-                <input type="text" placeholder="Resultado" readonly>
+                <input type="text" id="resultado" placeholder="Resultado" readonly>
                 <button class="btn-copiar">Copiar</button>
             </div>        
         </section> 
@@ -40,6 +40,6 @@
             <a href="#titulo">Ir al comienzo</a>                
         </section>
     </footer>
-   
+   <script src="js/encriptador.js"></script>
 </body>
 </html>
