@@ -15,16 +15,17 @@
         <section>
             <div class="conteiner">
                 <p>Insertar texto</p>
-                <input type="text" id="texto" placeholder="Insertar texto">
+                <input class="texto" type="text" id="textoCopiar" placeholder="Insertar texto"> 
+                <span><box-icon type='solid' name='copy'> </box-icon></span>
                 <span class="invisible"  id="error">Error texto no válido</span>
-                <button class="botonE" id="btn-encriptar" >Encriptar</button>
-                <button class="boton" id="btn-desencriptar">desencriptar</button>
-                <button class="boton" id="btn-limpiar">Limpiar</button>    
+                <button class="btn-encriptar" id="encriptar" >Encriptar</button>
+                <button class="btn-desencriptar" id="desencriptar">desencriptar</button>
+                <button class="btn-limpiar" id="btn-limpiar">Limpiar</button>    
             </div>
             <div class="conteiner">
                 <p>Resultado</p>
                 <input type="text" id="resultado" placeholder="Resultado" readonly>
-                <button class="btn-copiar">Copiar</button>
+                <button class="btn-copiar bx bxs-copy-alt " id="copiar"></button>
             </div>        
         </section> 
      </main>   
@@ -41,5 +42,7 @@
         </section>
     </footer>
    <script src="js/encriptador.js"></script>
+   <script src="js/desencriptador.js"></script>
+
 </body>
 </html>

@@ -1,11 +1,10 @@
-var botonEncriptar = document.querySelector(".botonE");
+var botonEncriptar = document.querySelector(".btn-encriptar");
 var resultado = document.querySelector("#resultado");
-var texto = document.querySelector("#texto")
 botonEncriptar.addEventListener("click",encriptar);
 
 function encriptar(){
     
-    var texto = document.querySelector("#texto").value;
+    var texto = document.querySelector(".texto").value;
 
         texto = texto.replaceAll("e","enter");
         texto = texto.replaceAll("i","imes");
