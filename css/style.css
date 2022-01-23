@@ -1,0 +1,140 @@
+html {
+    font-family: 'Rubik', sans-serif;
+}
+body{
+   /* background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);    margin: 0;*/
+   background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+}
+header{
+    background-color: #364552;
+    color: white;
+    padding: 0.95px;
+}
+h1{
+    text-align: center;
+    font-size: 55px;
+}
+.conteiner{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.div{
+    box-shadow: 0 12px 16px 0 rgba(218, 23, 23, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: #ffffff;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    font-size: 35px;
+    margin: 50px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.cont{
+    font-size: 35px;
+    margin-left: 40px;
+    width: 400px;
+    height: 250px;
+    text-align:unset;
+    margin: 10px;
+    
+}
+.btn{
+    border-radius: 8px;
+    padding: 15px 32px;
+    color: white;
+    font-size: 20px;
+    border-color: white;
+    display: inline-block;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.btn-encriptar{
+    background-color: #32CD32; 
+}
+.btn-desencriptar{
+    background-color: #FF8C00;
+}
+.btn-limpiar{
+    background-color: #2F4F4F; 
+}
+.btn-copiar{
+    background-color: #008B8B; 
+}
+.footer-basic {
+    padding:30px 0;
+    background-color:#efefef;
+    color:#4b4c4d;
+}
+
+.footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+    font-size:40px;
+    width: 55px;
+    height: 55px;
+    line-height:60px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid rgb(0, 0, 0);
+    margin: 8px;
+    color:inherit;
+    opacity:0.95;
+}
+  
+.footer-basic .social > a:hover {
+    color: rgb(135, 8, 253);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+  
+.footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:20px;
+    color:rgb(0, 0, 0);
+    margin-bottom:0;
+}
+/*footer{
+    background-color: #364552;
+    color: white;
+    padding: 20px;
+    height: 90px;
+}
+
+footer div{
+    float:right;
+    font-size: 35px;
+}
+section a{
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    color: blueviolet;
+}
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff
+ }
+ .social-media-icon:hover{
+    background: #fff;
+    color: #764ba2;
+}
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}*/

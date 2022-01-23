@@ -9,6 +9,5 @@ function desencriptar(){
         texto = texto.replaceAll("ai","a");
         texto = texto.replaceAll("ober","o");
         texto = texto.replaceAll("ufat","u");
-    console.log(texto);
     resultado.value = texto
 };

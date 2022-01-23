@@ -2,7 +2,6 @@ var botonLimpiar = document.querySelector(".btn-limpiar");
 var botonCopiar = document.querySelector(".btn-copiar");
 var resultado = document.querySelector("#resultado");
 var texto = document.querySelector(".texto");
-var seleccion = document.createRange();
 
 botonLimpiar.addEventListener("click",limpiar);
 botonCopiar.addEventListener("click",copiar);

@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Oxygen:wght@300&family=Roboto:ital,wght@1,900&family=Rubik:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Encriptador</title>
 </head>
 <body>
@@ -15,36 +16,40 @@
         <h1 class="titulo">Encriptador de Texto</h1>
     </header>
     <main>
-        <section>
-            <div class="conteiner">
+        <section class="conteiner">
+            <div class="div">
                 <p>Insertar texto</p>
-                <input class="texto"  id="textoCopiar" placeholder="Insertar texto" style="text-transform:lowercase;" onkeyup="javascript:this.value=this.value.toLowerCase();" onkeypress="return validarTexto(event);" pattern=".{3,99}" > 
-                <span><box-icon type='solid' name='copy'> </box-icon></span>
-                <button class="btn-encriptar" id="encriptar" >Encriptar</button>
-                <button class="btn-desencriptar" id="desencriptar">desencriptar</button>
-                <button class="btn-limpiar" id="btn-limpiar">Limpiar</button>    
+                <textarea  class="cont texto" id="textoCopiar" style="text-transform:lowercase;" onkeyup="javascript:this.value=this.value.toLowerCase();" onkeypress="return validarTexto(event);" pattern=".{3,99}"  > 
+                </textarea>
+                <br>
+                <button class="btn btn-encriptar" id="encriptar" >Encriptar</button>
+                <button class="btn btn-desencriptar" id="desencriptar">Desencriptar</button>
+                <button class="btn btn-limpiar" id="btn-limpiar">Limpiar</button>    
             </div>
-            <div class="conteiner">
+            <div class="div">
                 <p>Resultado</p>
-                <input type="text" id="resultado" placeholder="Resultado" readonly>
-                <button class="btn-copiar bx bxs-copy-alt " id="copiar"></button>
-            </div>        
+                <textarea class="cont resultado" id="resultado" readonly> </textarea>
+                <br>
+                <button class="btn btn-copiar bx bxs-copy-alt " id="copiar">Copiar</button>
+            </div>      
         </section> 
      </main>   
-     <footer>
-        <section>
-            <p>Camila Maturano</p>
-            <a href="https://www.linkedin.com/in/camila-maturano/" class="social-media-icon" target="_blank">
-                <i class='bx bxl-linkedin'></i>
-            </a>
-            <a href="https://github.com/CamilaMaturano00" class="social-media-icon" target="_blank">
-                <i class='bx bxl-github'></i>
-            </a>
-            <a href="#titulo">Ir al comienzo</a>                
-        </section>
-    </footer>
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/camila-maturano/" class="social-media-icon" target="_blank">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="https://github.com/CamilaMaturano00" class="social-media-icon" target="_blank">
+                    <i class='bx bxl-github'></i>
+                </a>
+            </div>
+            <p class="copyright">Camila Maturano © 2022</p>
+        </footer>
+    </div>
    <script src="js/encriptador.js"></script>
    <script src="js/desencriptador.js"></script>
    <script src="js/botonCopiar.js"></script>
+   <script src="js/validar.js"></script>
 </body>
 </html>
